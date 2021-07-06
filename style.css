@@ -461,6 +461,7 @@ footer ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .inner-contact {
@@ -697,6 +698,10 @@ footer ul li a {
   }
   .para-container {
     align-items: start;
+    background-color: #fff;
+  }
+  .contact {
+    height: 100%;
   }
 }
 
@@ -710,7 +715,7 @@ footer ul li a {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 650px) {
   header ul.active {
     position: absolute;
     left: 0;
@@ -724,6 +729,10 @@ footer ul li a {
     top: 150px;
     background-color: #d0d0d0;
     box-shadow: 0 5px 5px rgb(0 0 0 / 50%);
+  }
+
+  .skills {
+    line-height: 1;
   }
 
   .title h1 {
@@ -884,5 +893,28 @@ footer ul li a {
   }
   .box {
     padding: 30px;
+  }
+}
+
+/* media query for height issue */
+@media (max-height: 400px) and (min-width: 400px) {
+  .text {
+    padding: 0px;
+  }
+
+  .text h1 {
+    font-size: 10vh;
+  }
+
+  .text p {
+    font-size: 6vh;
+  }
+}
+
+@media (min-width: 1500px) and (max-height: 767px) {
+  .inner-contact-box {
+    height: 300px;
+    top: 20px;
+    left: 150px;
   }
 }
