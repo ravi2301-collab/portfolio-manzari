@@ -236,6 +236,12 @@ footer ul li a {
 .skills p {
   font-size: 1.2rem;
 }
+.inner-skills {
+  animation: slideFromRight 0.7s ease-in;
+}
+.skills button {
+  animation: slideFromBottom 1s ease-in;
+}
 
 /* Timeline */
 .timeline {
