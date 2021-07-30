@@ -42,3 +42,62 @@
     transform: translateY(0);
   }
 }
+
+.left {
+  transition: all 1s;
+  transform: translateX(-200px);
+  opacity: 0;
+}
+
+.left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.right {
+  transition: all 1s;
+  transform: translateX(200px);
+  opacity: 0;
+}
+
+.right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.text-quote,
+.strengths,
+.text-add {
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+
+.text-quote.active,
+.strengths.active,
+.text-add.active {
+  opacity: 1;
+}
+
+.special,
+.inner-facts-content {
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: all 1s ease-in;
+}
+
+.special.active,
+.inner-facts-content.active {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.inner-contact-box {
+  transition: all 1s ease-out;
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+.inner-contact-box.active {
+  transform: translateY(0);
+  opacity: 1;
+}
